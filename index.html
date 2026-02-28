@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Thinker - Trung Tâm Anh Ngữ</title>
+    <meta name="description"
+        content="Trung tâm Anh ngữ The Thinker - Môi trường học tập tiêu chuẩn quốc tế, phát triển tư duy và kỹ năng toàn diện cho trẻ.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-text">The <span class="highlight">Thinker</span></span>
+            </a>
+
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav_home">Trang chủ</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#about" class="nav-link"><span data-i18n="nav_about">Giới thiệu</span> <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#about-mission" data-i18n="nav_about_mission">Sứ mệnh</a></li>
+                            <li><a href="#about-values" data-i18n="nav_about_values">Giá trị cốt lõi</a></li>
+                            <li><a href="#about-philosophy" data-i18n="nav_about_philosophy">Triết lý</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#theory" class="nav-link"><span data-i18n="nav_theory">Cơ sở lý thuyết</span> <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#theory-unesco" data-i18n="nav_theory_unesco">4 Trụ cột UNESCO</a></li>
+                            <li><a href="#theory-bloom" data-i18n="nav_theory_bloom">Thang tư duy Bloom</a></li>
+                            <li><a href="#theory-pillars" data-i18n="nav_theory_pillars">3 Trụ cột đào tạo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#programs" class="nav-link"><span data-i18n="nav_programs">Chương trình đào tạo</span>
+                            <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#program-english" data-i18n="nav_prog_english">Tiếng Anh</a></li>
+                            <li><a href="#program-softskills" data-i18n="nav_prog_softskills">Kỹ năng mềm</a></li>
+                            <li><a href="#program-extracurricular" data-i18n="nav_prog_extracurricular">Ngoại khóa</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav_contact">Liên hệ</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="lang-toggle-btn" id="lang-toggle" title="Switch Language">
+                        <span class="lang-en">EN</span> | <span class="lang-vi highlight">VN</span>
+                    </button>
+                    <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="social-links-header">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo"
+                                class="zalo-icon-small"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Tìm kiếm chương trình, bài viết..." id="search-input"
+                        data-i18n-placeholder="search_placeholder">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <button type="button" class="close-search" id="close-search"><i class="fas fa-times"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge" data-i18n="hero_badge">#1 Môi trường tư duy chuẩn quốc tế</span>
+                    <h1 class="hero-title"><span data-i18n="hero_title_1">Khơi dậy tiềm năng, <br></span><span
+                            data-i18n="hero_title_2" class="highlight">Nâng tầm tư duy</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">Môi trường giáo dục tiên tiến, nơi học viên không
+                        chỉ học ngôn ngữ mà còn
+                        phát triển tư duy phản biện và kỹ năng công dân toàn cầu với phương pháp giảng dạy độc quyền.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#programs" class="btn btn-primary" data-i18n="hero_btn_explore">Khám phá chương
+                            trình</a>
+                        <a href="#about" class="btn btn-outline" data-i18n="hero_btn_about">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+
+                <div class="hero-form-wrapper" id="consultation">
+                    <div class="consultation-form">
+                        <h3 data-i18n="form_title">Đăng ký nhận tư vấn lộ trình</h3>
+                        <p data-i18n="form_desc">Nhận ngay đánh giá năng lực và lộ trình học tập cá nhân hóa miễn phí.
+                        </p>
+                        <form id="hero-consultation-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Họ và tên học viên *" required
+                                    data-i18n-placeholder="form_name">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Số điện thoại *" required
+                                        data-i18n-placeholder="form_phone">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" placeholder="Năm sinh *" min="1990" max="2020" required
+                                        data-i18n-placeholder="form_year">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected data-i18n="form_prog_default">Chương trình quan
+                                        tâm *</option>
+                                    <optgroup label="Tiếng Anh Trẻ Em" data-i18n-label="form_prog_group_1">
+                                        <option value="tieng-anh-tien-tieu-hoc" data-i18n="form_prog_opt_1">Tiếng Anh
+                                            tiền tiểu học</option>
+                                        <option value="tieng-anh-tieu-hoc" data-i18n="form_prog_opt_2">Tiếng Anh tiểu
+                                            học</option>
+                                        <option value="tieng-anh-ke-chuyen" data-i18n="form_prog_opt_3">Tiếng Anh kể
+                                            chuyện & thuyết trình</option>
+                                    </optgroup>
+                                    <optgroup label="Luyện thi" data-i18n-label="form_prog_group_2">
+                                        <option value="cambridge" data-i18n="form_prog_opt_4">Tiếng Anh Cambridge (Cấp
+                                            2)</option>
+                                        <option value="ielts" data-i18n="form_prog_opt_5">Luyện thi IELTS</option>
+                                        <option value="vao-10" data-i18n="form_prog_opt_6">Luyện thi vào 10</option>
+                                        <option value="vao-dh" data-i18n="form_prog_opt_7">Luyện thi vào Đại học
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Kỹ năng & Ngoại khóa" data-i18n-label="form_prog_group_3">
+                                        <option value="ky-nang-mem" data-i18n="form_prog_opt_8">Kỹ năng mềm</option>
+                                        <option value="trai-he" data-i18n="form_prog_opt_9">Trại hè Young Thinker Camp
+                                        </option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email (Tùy chọn)" data-i18n-placeholder="form_email">
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-full" data-i18n="form_btn">Đăng ký tư vấn
+                                ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle" data-i18n="about_subtitle">Về Tổ Chức</span>
+                    <h2 class="section-title"><span data-i18n="about_title_1">Khám Phá </span><span
+                            data-i18n="about_title_2" class="highlight">The Thinker</span></h2>
+                    <p class="section-desc" data-i18n="about_desc">Chúng tôi tin rằng mọi đứa trẻ đều có một tiềm năng
+                        vô hạn cần được đánh
+                        thức.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card" id="about-mission">
+                        <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 data-i18n="about_mission_title">Sứ mệnh</h3>
+                        <p data-i18n="about_mission_desc">Kiến tạo môi trường giáo dục hạnh phúc, nơi truyền cảm hứng
+                            học tập trọn đời và trang bị cho
+                            thế hệ trẻ em Việt Nam nền tảng tiếng Anh vững chắc cùng kỹ năng công dân toàn cầu thế kỷ
+                            21.</p>
+                    </div>
+                    <div class="about-card" id="about-values">
+                        <div class="about-icon"><i class="fas fa-gem"></i></div>
+                        <h3 data-i18n="about_values_title">Giá trị cốt lõi</h3>
+                        <p data-i18n="about_values_desc"><strong>Tận tâm (Dedication):</strong> Đặt học trò làm trung
+                            tâm.<br><strong>Sáng tạo
+                                (Innovation):</strong> Đổi mới phương pháp liên tục.<br><strong>Tôn trọng
+                                (Respect):</strong> Tôn trọng sự khác biệt của mỗi cá nhân.</p>
+                    </div>
+                    <div class="about-card" id="about-philosophy">
+                        <div class="about-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 data-i18n="about_phil_title">Triết lý giáo dục</h3>
+                        <p data-i18n="about_phil_desc">"Giáo dục không phải là đổ đầy một cái bình, mà là thắp sáng một
+                            ngọn lửa." Chúng tôi giáo
+                            dục thông qua sự thấu hiểu, khơi gợi trí tò mò và tôn trọng sự phát triển tự nhiên của trẻ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Theory Section -->
+        <section id="theory" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle" data-i18n="theory_subtitle">Triết lý đào tạo</span>
+                    <h2 class="section-title"><span data-i18n="theory_title_1">Cơ Sở </span><span
+                            data-i18n="theory_title_2" class="highlight">Lý Thuyết</span></h2>
+                </div>
+
+                <div class="theory-grid">
+                    <!-- UNESCO -->
+                    <div class="theory-block" id="theory-unesco">
+                        <div class="theory-image">
+                            <div class="placeholder-img"
+                                style="background:#e0f2fe; color:#0284c7; height:200px; display:flex; align-items:center; justify-content:center; border-radius:1rem;">
+                                <i class="fas fa-globe fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="theory-content">
+                            <h3 data-i18n="theory_unesco_title">4 Trụ cột giáo dục UNESCO</h3>
+                            <ul class="check-list">
+                                <li data-i18n="theory_unesco_1"><strong>Học để biết (Learning to know):</strong> Tiếp
+                                    thu công cụ hiểu biết.</li>
+                                <li data-i18n="theory_unesco_2"><strong>Học để làm (Learning to do):</strong> Vận dụng
+                                    kiến thức vào thực tiễn.</li>
+                                <li data-i18n="theory_unesco_3"><strong>Học để chung sống (Learning to live
+                                        together):</strong> Hợp tác và thấu
+                                    hiểu.</li>
+                                <li data-i18n="theory_unesco_4"><strong>Học để tự khẳng định mình (Learning to
+                                        be):</strong> Phát triển toàn diện
+                                    nhân cách.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Bloom -->
+                    <div class="theory-block reverse" id="theory-bloom">
+                        <div class="theory-content">
+                            <h3 data-i18n="theory_bloom_title">Thang tư duy Bloom</h3>
+                            <p data-i18n="theory_bloom_desc">Áp dụng hệ thống phân loại mục tiêu giáo dục của Bloom để
+                                thiết kế lộ trình học tập từ
+                                thấp đến cao:</p>
+                            <div class="bloom-steps">
+                                <span class="step step-1" data-i18n="theory_bloom_1">Nhớ</span>
+                                <span class="step step-2" data-i18n="theory_bloom_2">Hiểu</span>
+                                <span class="step step-3" data-i18n="theory_bloom_3">Vận dụng</span>
+                                <span class="step step-4" data-i18n="theory_bloom_4">Phân tích</span>
+                                <span class="step step-5" data-i18n="theory_bloom_5">Đánh giá</span>
+                                <span class="step step-6" data-i18n="theory_bloom_6">Sáng tạo</span>
+                            </div>
+                        </div>
+                        <div class="theory-image">
+                            <div class="placeholder-img"
+                                style="background:#fef3c7; color:#d97706; height:200px; display:flex; align-items:center; justify-content:center; border-radius:1rem;">
+                                <i class="fas fa-chart-line fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Pillars -->
+                    <div class="theory-block" id="theory-pillars">
+                        <div class="theory-image">
+                            <div class="placeholder-img"
+                                style="background:#d1fae5; color:#059669; height:200px; display:flex; align-items:center; justify-content:center; border-radius:1rem;">
+                                <i class="fas fa-cubes fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="theory-content">
+                            <h3 data-i18n="theory_pillars_title">3 Trụ cột đào tạo tại The Thinker</h3>
+                            <div class="pillar-cards">
+                                <div class="pillar-card">
+                                    <h4 data-i18n="theory_pillars_1_t">Ngôn ngữ</h4>
+                                    <p data-i18n="theory_pillars_1_d">Giao tiếp tự nhiên, chuẩn bản xứ.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <h4 data-i18n="theory_pillars_2_t">Tư duy</h4>
+                                    <p data-i18n="theory_pillars_2_d">Tư duy phản biện, logic, giải quyết vấn đề.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <h4 data-i18n="theory_pillars_3_t">Kỹ năng</h4>
+                                    <p data-i18n="theory_pillars_3_d">Tự lập, tự học, hợp tác, EQ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle" data-i18n="prog_subtitle">Chương trình học</span>
+                    <h2 class="section-title"><span data-i18n="prog_title_1">Chương Trình </span><span
+                            data-i18n="prog_title_2" class="highlight">Đào Tạo</span></h2>
+
+                    <!-- Program Filters -->
+                    <div class="program-filters">
+                        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tất cả</button>
+                        <button class="filter-btn" data-filter="english" data-i18n="filter_english">Tiếng Anh Trẻ Em &
+                            Luyện Thi</button>
+                        <button class="filter-btn" data-filter="softskills" data-i18n="filter_softskills">Kỹ năng mềm
+                            (Tiếng Việt)</button>
+                        <button class="filter-btn" data-filter="extra" data-i18n="filter_extra">Ngoại khóa</button>
+                    </div>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- English Programs -->
+                    <div class="program-card" data-category="english" id="program-english">
+                        <div class="program-img"
+                            style="background-color: var(--primary); height: 160px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="program-info">
+                            <span class="program-tag" data-i18n="prog_tag_eng">Tiếng Anh</span>
+                            <h3 data-i18n="prog_eng_title">Tiếng Anh Trẻ Em</h3>
+                            <p data-i18n="prog_eng_desc">Gồm TA Tiền tiểu học, TA Tiểu học, TA Kể chuyện & Thuyết trình.
+                                Học qua Literacy,
+                                Activity, và Project.</p>
+                            <a href="#consultation" class="btn btn-outline" data-i18n="prog_btn"
+                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Đăng ký</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="english" id="program-cambridge">
+                        <div class="program-img"
+                            style="background-color: var(--primary-dark); height: 160px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="program-info">
+                            <span class="program-tag" data-i18n="prog_tag_test">Luyện Thi</span>
+                            <h3 data-i18n="prog_cam_title">Tiếng Anh Cambridge (Cấp 2)</h3>
+                            <p data-i18n="prog_cam_desc">Chương trình chuẩn quốc tế, chuẩn bị nền tảng vững chắc cho các
+                                kỳ thi chứng chỉ
+                                Cambridge (KET, PET, FCE).</p>
+                            <a href="#consultation" class="btn btn-outline" data-i18n="prog_btn"
+                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Đăng ký</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="english" id="program-ielts">
+                        <div class="program-img"
+                            style="background-color: #4f46e5; height: 160px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="program-info">
+                            <span class="program-tag" data-i18n="prog_tag_test">Luyện Thi</span>
+                            <h3 data-i18n="prog_ielts_title">Luyện Thi: IELTS, Vào 10, ĐH</h3>
+                            <p data-i18n="prog_ielts_desc">Lộ trình chuyên sâu giúp học viên đạt mục tiêu điểm số IELTS,
+                                thi đỗ các trường chuyên và
+                                Đại học top đầu.</p>
+                            <a href="#consultation" class="btn btn-outline" data-i18n="prog_btn"
+                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Đăng ký</a>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="program-card" data-category="softskills" id="program-softskills">
+                        <div class="program-img"
+                            style="background-color: var(--accent); height: 160px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="program-info">
+                            <span class="program-tag" data-i18n="prog_tag_skill">Kỹ Năng</span>
+                            <h3 data-i18n="prog_skill_title">Kỹ Năng Mềm (Tiếng Việt)</h3>
+                            <p data-i18n="prog_skill_desc">Kỹ năng tư duy phản biện. Các khóa "Em kể chuyện xưa", "Hạt
+                                giống tốt lành" nuôi dưỡng
+                                tâm hồn và nhân cách.</p>
+                            <a href="#consultation" class="btn btn-outline" data-i18n="prog_btn"
+                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Đăng ký</a>
+                        </div>
+                    </div>
+
+                    <!-- Extracurricular -->
+                    <div class="program-card" data-category="extra" id="program-extracurricular">
+                        <div class="program-img"
+                            style="background-color: var(--success); height: 160px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                            <i class="fas fa-campground"></i>
+                        </div>
+                        <div class="program-info">
+                            <span class="program-tag" data-i18n="prog_tag_extra">Ngoại Khóa</span>
+                            <h3 data-i18n="prog_extra_title">Chuyến Tàu Văn Hóa & Trại Hè</h3>
+                            <p data-i18n="prog_extra_desc">Trải nghiệm thực tế qua Young Thinker Camp và Chuyến Tàu Văn
+                                Hóa, kết hợp học tập và kỹ
+                                năng sinh tồn, làm việc nhóm.</p>
+                            <a href="#consultation" class="btn btn-outline" data-i18n="prog_btn"
+                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-block">
+                        <h2 class="section-title"><span data-i18n="contact_title_1">Liên Hệ </span><span
+                                data-i18n="contact_title_2" class="highlight">Với Chúng Tôi</span></h2>
+                        <p class="section-desc" data-i18n="contact_desc">Chúng tôi luôn sẵn sàng lắng nghe và giải đáp
+                            mọi thắc mắc của quý phụ
+                            huynh và học viên.</p>
+
+                        <ul class="contact-details">
+                            <li>
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="text">
+                                    <h4 data-i18n="contact_addr_t">Địa chỉ</h4>
+                                    <p data-i18n="contact_addr_d">123 Đường Tôn Đức Thắng, Quận Đống Đa, Hà Nội</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="text">
+                                    <h4 data-i18n="contact_hotline_t">Hotline</h4>
+                                    <p>0123.456.789 - 0987.654.321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-clock"></i></div>
+                                <div class="text">
+                                    <h4 data-i18n="contact_hours_t">Giờ mở cửa</h4>
+                                    <p data-i18n="contact_hours_d">Thứ 2 - Thứ 6: 08:00 - 21:00<br>Thứ 7 - Chủ Nhật:
+                                        08:00 - 19:00</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="https://maps.google.com/?q=21°42'12.0%22N+105°47'14.1%22E" target="_blank"
+                                class="btn btn-primary"><i class="fas fa-directions" style="margin-right: 8px;"></i>
+                                <span data-i18n="contact_map_btn">Chỉ đường trên Google
+                                    Maps</span></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=21°42'12.0%22N+105°47'14.1%22E&hl=vi&z=15&output=embed"
+                            width="100%" height="100%"
+                            style="border:0; border-radius: 1rem; box-shadow: var(--shadow-lg);" allowfullscreen=""
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-text">The <span class="highlight">Thinker</span></span>
+                </a>
+                <p class="footer-desc" data-i18n="footer_desc">Tiên phong trong đào tạo tiếng Anh và phát triển năng lực
+                    tư duy, kỹ năng mềm cho
+                    thế hệ trẻ em Việt Nam toàn cầu.</p>
+                <div class="social-links-footer">
+                    <a href="#" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="zalo" title="Zalo"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo"
+                            class="zalo-icon-small"></a>
+                    <a href="#" target="_blank" class="youtube" title="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="footer_head_1">Chương trình</h4>
+                <ul class="footer-links">
+                    <li><a href="#program-english" data-i18n="footer_link_1">Tiếng Anh cho trẻ</a></li>
+                    <li><a href="#program-cambridge" data-i18n="footer_link_2">Tiếng Anh Cambridge</a></li>
+                    <li><a href="#program-ielts" data-i18n="footer_link_3">Luyện thi chứng chỉ</a></li>
+                    <li><a href="#program-softskills" data-i18n="footer_link_4">Kỹ năng mềm & Tư duy</a></li>
+                    <li><a href="#program-extracurricular" data-i18n="footer_link_5">Trại hè ngoại khóa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="footer_head_2">Về chúng tôi</h4>
+                <ul class="footer-links">
+                    <li><a href="#about-mission" data-i18n="footer_link_6">Sứ mệnh & Giá trị</a></li>
+                    <li><a href="#theory-unesco" data-i18n="footer_link_7">Cơ sở lý thuyết</a></li>
+                    <li><a href="#theory-pillars" data-i18n="footer_link_8">Đội ngũ giảng viên</a></li>
+                    <li><a href="#" data-i18n="footer_link_9">Tin tức & Sự kiện</a></li>
+                    <li><a href="#" data-i18n="footer_link_10">Tuyển dụng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="footer_head_3">Liên hệ</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Tôn Đức Thắng, Quận Đống Đa, Hà Nội</li>
+                    <li><i class="fas fa-phone-alt"></i> 0123.456.789 - 0987.654.321</li>
+                    <li><i class="fas fa-envelope"></i> contact@thethinker.vn</li>
+                    <li><i class="fas fa-clock"></i> T2-T6: 8:00 - 21:00 <br>T7-CN: 8:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 The Thinker English Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Bar -->
+    <div class="floating-contact">
+        <a href="tel:0123456789" class="floating-btn hotline" title="Hotline">
+            <i class="fas fa-phone-alt"></i>
+            <span class="floating-text">0123.456.789</span>
+        </a>
+        <a href="#" class="floating-btn messenger" title="Facebook Messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="#" class="floating-btn zalo" title="Zalo Chat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
